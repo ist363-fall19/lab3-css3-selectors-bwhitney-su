@@ -196,3 +196,74 @@ justify-content: center;
 .related ul li a[href='#']{
     pointer-events: none;
 }
+
+/* Style the element with the class article as follows:
+A background color of #242628
+15px of padding on all sides
+15px top and bottom margin
+A 1px solid border of color #202020
+3px rounded corners
+A box shadow with no x-offset, 4px y-offset, 7px blur and a color of black at 15% opacity */
+
+.article{
+    background-color: #242628;
+    padding: 15px;
+    margin: 15px 0px;
+    border: 1px solid #202020;
+    border-radius: 3px;
+    box-shadow: 0px 4px 7px #000000;
+
+}
+
+/* The title of the article should be 36px in size, have a font weight of 900, and no top margin but 30px bottom margin
+The first letter inside the article title should be 72px large */
+
+.article-title{
+    font-size: 36px; 
+    font-weight: 900;
+    margin-top: 0;
+    margin-bottom: 30px; 
+}
+
+.article-title::first-letter{
+    font-size: 72px; 
+
+}
+
+/* Give a line-height of "2" to the element with the class article-body
+Any link inside the article should be white in color */
+
+.article-body{
+    line-height: 2; 
+}
+
+.article-body a{
+    color: #ffffff;
+
+}
+
+.aware:first-line{
+    font-weight: 900;
+    font-style: italic;
+
+}
+
+blockquote{
+    padding: 15px;
+    margin: 30px 0px;
+    font-style: italic;
+}
+
+blockquote:first-of-type{
+    border: 6px double #07b07e;
+    background-color: #20c997;
+}
+
+blockquote:last-of-type{
+    border: 6px double #0062e6;
+    background-color: #007bff;
+}
+
+.article-body p:last-of-type{
+    font-size: 14px;
+}
